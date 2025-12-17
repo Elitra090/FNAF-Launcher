@@ -94,6 +94,58 @@ body {
     border-radius: 5px;
 }
 
+.div4 {
+    background-image: url('./scr/images/fnaf4.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div4 h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.div5 {
+    background-image: url('./scr/images/fnafsl.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div5 h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 h2 {
     color: white;
 }
@@ -140,6 +192,36 @@ h2 {
 }
 
 .link3:hover {
+    transform: scale(1.35);
+}
+
+.link4 {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+}
+
+.link4:hover {
+    transform: scale(1.35);
+}
+
+.link5 {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+}
+
+.link5:hover {
     transform: scale(1.35);
 }
 
