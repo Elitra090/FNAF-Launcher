@@ -1,0 +1,149 @@
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+    display: flex;
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.intro {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 75px;
+}
+
+.div1 {
+    background-image: url('./scr/images/fnaf1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div2 {
+    background-image: url('./scr/images/fnaf2.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div1 h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.div2 h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.div3 {
+    background-image: url('./scr/images/fnaf3.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div3 h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: white;
+}
+
+.link1 {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+}
+
+.link1:hover {
+    transform: scale(1.35);
+}
+
+.link2 {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+}
+
+.link2:hover {
+    transform: scale(1.35);
+}
+
+.link3 {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+}
+
+.link3:hover {
+    transform: scale(1.35);
+}
+
+.bottom {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
