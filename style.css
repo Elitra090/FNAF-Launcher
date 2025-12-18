@@ -2,12 +2,32 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.hidden {
+    display: none !important;
+}
+
+#main-content {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0 !important;
+}
+
 .logo {
+    cursor: pointer;
     display: flex;
     width: 25%;
     height: auto;
     margin: 0 auto;
     margin-top: 50px;
+    transition: transform 0.2s ease;
+    padding: 5px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .intro {
@@ -16,28 +36,7 @@ body {
     margin-bottom: 75px;
 }
 
-.candyslink {
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 20px;
-    border-radius: 10px;
-    padding: 5px;
-    transition: transform 0.2s ease;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    font-weight: bold;
-}
-
-.candyslink:hover {
-    transform: scale(1.15);
-    color: white;
-    background-color: black;
-    font-weight: bold;
-}
-
-.div1 {
+.div1-fnaf {
     background-image: url('./scr/images/fnaf1.png');
     background-size: cover;
     background-position: center;
@@ -52,7 +51,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.div2 {
+.div2-fnaf {
     background-image: url('./scr/images/fnaf2.png');
     background-size: cover;
     background-position: center;
@@ -67,7 +66,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.div1 h2 {
+.div1-fnaf h2 {
     margin: 0;
     align-self: flex-start;
     text-align: center;
@@ -78,7 +77,7 @@ body {
     border-radius: 5px;
 }
 
-.div2 h2 {
+.div2-fnaf h2 {
     margin: 0;
     align-self: flex-start;
     text-align: center;
@@ -89,7 +88,7 @@ body {
     border-radius: 5px;
 }
 
-.div3 {
+.div3-fnaf {
     background-image: url('./scr/images/fnaf3.png');
     background-size: cover;
     background-position: center;
@@ -104,7 +103,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.div3 h2 {
+.div3-fnaf h2 {
     margin: 0;
     align-self: flex-start;
     text-align: center;
@@ -115,7 +114,7 @@ body {
     border-radius: 5px;
 }
 
-.div4 {
+.div4-fnaf {
     background-image: url('./scr/images/fnaf4.png');
     background-size: cover;
     background-position: center;
@@ -130,7 +129,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.div4 h2 {
+.div4-fnaf h2 {
     margin: 0;
     align-self: flex-start;
     text-align: center;
@@ -141,7 +140,7 @@ body {
     border-radius: 5px;
 }
 
-.div5 {
+.div5-fnaf {
     background-image: url('./scr/images/fnafsl.png');
     background-size: cover;
     background-position: center;
@@ -156,7 +155,59 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.div5 h2 {
+.div5-fnaf h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.div6-fnaf {
+    background-image: url('./scr/images/fnafps.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div6-fnaf h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.div7-fnaf {
+    background-image: url('./scr/images/fnafucn.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div7-fnaf h2 {
     margin: 0;
     align-self: flex-start;
     text-align: center;
@@ -171,7 +222,7 @@ h2 {
     color: white;
 }
 
-.link1 {
+.link1-fnaf {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -180,13 +231,16 @@ h2 {
     padding: 5px;
     align-self: flex-end;
     transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
-.link1:hover {
+.link1-fnaf:hover {
     transform: scale(1.35);
 }
 
-.link2 {
+.link2-fnaf {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -195,13 +249,16 @@ h2 {
     padding: 5px;
     align-self: flex-end;
     transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
-.link2:hover {
+.link2-fnaf:hover {
     transform: scale(1.35);
 }
 
-.link3 {
+.link3-fnaf {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -210,13 +267,16 @@ h2 {
     padding: 5px;
     align-self: flex-end;
     transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
-.link3:hover {
+.link3-fnaf:hover {
     transform: scale(1.35);
 }
 
-.link4 {
+.link4-fnaf {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -225,13 +285,16 @@ h2 {
     padding: 5px;
     align-self: flex-end;
     transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
-.link4:hover {
+.link4-fnaf:hover {
     transform: scale(1.35);
 }
 
-.link5 {
+.link5-fnaf {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -240,9 +303,180 @@ h2 {
     padding: 5px;
     align-self: flex-end;
     transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
-.link5:hover {
+.link5-fnaf:hover {
+    transform: scale(1.35);
+}
+
+.link6-fnaf {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.link6-fnaf:hover {
+    transform: scale(1.35);
+}
+
+.link7-fnaf {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.link7-fnaf:hover {
+    transform: scale(1.35);
+}
+
+.div1-fnac {
+    background-image: url('./scr/images/fnac1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div2-fnac {
+    background-image: url('./scr/images/fnac2.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div1-fnac h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.div2-fnac h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.div3-fnac {
+    background-image: url('./scr/images/fnac3.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+    width: 50%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.div3-fnac h2 {
+    margin: 0;
+    align-self: flex-start;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.link1-fnac {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.link1-fnac:hover {
+    transform: scale(1.35);
+}
+
+.link2-fnac {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.link2-fnac:hover {
+    transform: scale(1.35);
+}
+
+.link3-fnac {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.link3-fnac:hover {
     transform: scale(1.35);
 }
 
