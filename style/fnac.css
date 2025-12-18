@@ -16,6 +16,27 @@ body {
     margin-bottom: 75px;
 }
 
+.backlink {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.backlink:hover {
+    transform: scale(1.15);
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
 .div1 {
     background-image: url('../scr/images/fnac1.png');
     background-size: cover;
