@@ -113,7 +113,7 @@
             font-size: 5vw;
         }
 
-        .loader hr{
+        .loader hr {
             margin: 0;
             border: white solid 0.1vw;
             width: 0%;
@@ -123,11 +123,31 @@
             margin: 1vh 0;
             font-size: 1.4vw;
         }
+
+
+
+        button#emular-ctrl {
+            position: absolute;
+            bottom: 2vh;
+            right: 2vw;
+            width: 10vw;
+            /* Increased size */
+            height: 8vh;
+            /* Increased size */
+            z-index: 9999;
+            opacity: 0.7;
+            font-size: 2vw;
+            border: 2px solid white;
+            background: rgba(255, 0, 0, 0.3);
+            color: white;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
 <body>
     <canvas id="MMFCanvas" width="1024" height="768"> Your browser does not support Canvas, Please try again.</canvas>
+    <button id="emular-ctrl">CTRL</button>
     <div class="selection" id="selection">
         <img id="title" src="resources/title.png">
         <img id="animatronic" src="resources/animatronic.png">
@@ -158,6 +178,48 @@
         event.preventDefault();
         event.stopPropagation();
     }
+
+
+
+    // Emular control
+    const boton = document.getElementById('emular-ctrl');
+
+    // Función para emular pulsación de tecla
+    function emularTecla(type) {
+        const evento = new KeyboardEvent(type, {
+            key: 'Control',
+            code: 'ControlLeft',
+            location: 1,
+            keyCode: 17,
+            which: 17,
+            ctrlKey: type === 'keydown',
+            bubbles: true,
+            cancelable: true
+        });
+        window.dispatchEvent(evento);
+        document.dispatchEvent(evento);
+    }
+
+    if (boton) {
+        const down = (e) => {
+            e.preventDefault();
+            emularTecla('keydown');
+        };
+        const up = (e) => {
+            e.preventDefault();
+            emularTecla('keyup');
+        };
+
+        boton.addEventListener('mousedown', down);
+        boton.addEventListener('touchstart', down);
+        boton.addEventListener('mouseup', up);
+        boton.addEventListener('touchend', up);
+        boton.addEventListener('mouseleave', up);
+    }
+
+    // Print Crtl input
+
+
     // Fullscreen Key
     const pressedKeys = {};
     document.addEventListener('keydown', event => {
@@ -170,6 +232,8 @@
     document.addEventListener('keyup', (event) => {
         delete pressedKeys[event.key];
     });
+
+
     // -----------------
     window.onload = function () {
         const map = new Map();
@@ -333,4 +397,5 @@
         });
     };
 </script>
+
 </html>
