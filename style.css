@@ -222,7 +222,7 @@ h2 {
     color: white;
 }
 
-.link1-fnaf {
+.link1-fnaf-pc {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -236,11 +236,11 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link1-fnaf:hover {
+.link1-fnaf-pc:hover {
     transform: scale(1.35);
 }
 
-.link2-fnaf {
+.link2-fnaf-pc {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -254,11 +254,11 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link2-fnaf:hover {
+.link2-fnaf-pc:hover {
     transform: scale(1.35);
 }
 
-.link3-fnaf {
+.link2-fnaf-mobile {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -272,11 +272,11 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link3-fnaf:hover {
+.link2-fnaf-mobile:hover {
     transform: scale(1.35);
 }
 
-.link4-fnaf {
+.link3-fnaf-pc {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -290,11 +290,11 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link4-fnaf:hover {
+.link3-fnaf-pc:hover {
     transform: scale(1.35);
 }
 
-.link5-fnaf {
+.link4-fnaf-pc {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -308,11 +308,11 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link5-fnaf:hover {
+.link4-fnaf-pc:hover {
     transform: scale(1.35);
 }
 
-.link6-fnaf {
+.link4-fnaf-mobile {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -326,11 +326,11 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link6-fnaf:hover {
+.link4-fnaf-mobile:hover {
     transform: scale(1.35);
 }
 
-.link7-fnaf {
+.link5-fnaf-pc {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -344,7 +344,43 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link7-fnaf:hover {
+.link5-fnaf-pc:hover {
+    transform: scale(1.35);
+}
+
+.link6-fnaf-pc {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.link6-fnaf-pc:hover {
+    transform: scale(1.35);
+}
+
+.link7-fnaf-pc {
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    align-self: flex-end;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.link7-fnaf-pc:hover {
     transform: scale(1.35);
 }
 
@@ -426,7 +462,7 @@ h2 {
     border-radius: 5px;
 }
 
-.link1-fnac {
+.link1-fnac-pc {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -440,11 +476,11 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link1-fnac:hover {
+.link1-fnac-pc:hover {
     transform: scale(1.35);
 }
 
-.link2-fnac {
+.link2-fnac-pc {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -458,11 +494,11 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link2-fnac:hover {
+.link2-fnac-pc:hover {
     transform: scale(1.35);
 }
 
-.link3-fnac {
+.link3-fnac-pc {
     text-decoration: none;
     text-align: center;
     border: 0px solid white;
@@ -476,11 +512,18 @@ h2 {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.link3-fnac:hover {
+.link3-fnac-pc:hover {
     transform: scale(1.35);
 }
 
 .bottom {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.links-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    gap: 10px;
 }
