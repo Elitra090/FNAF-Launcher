@@ -131,6 +131,7 @@
             bottom: 2vh;
             right: 2vw;
             width: 10vw;
+            margin-bottom: 75px;
             /* Increased size */
             height: 8vh;
             /* Increased size */
@@ -147,6 +148,7 @@
 
 <body>
     <canvas id="MMFCanvas" width="1024" height="768"> Your browser does not support Canvas, Please try again.</canvas>
+    <button id="emular-ctrl">CTRL</button>
     <div class="selection" id="selection">
         <img id="title" src="resources/title.png">
         <img id="animatronic" src="resources/animatronic.png">
@@ -395,27 +397,6 @@
             wedone();
         });
     };
-
-    // Mouse Recenter Script
-    function resetMouse() {
-        const canvas = document.getElementById('MMFCanvas');
-        if (!canvas) return;
-        const rect = canvas.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-
-        const event = new MouseEvent('mousemove', {
-            view: window,
-            bubbles: true,
-            cancelable: true,
-            clientX: centerX,
-            clientY: centerY
-        });
-        canvas.dispatchEvent(event);
-    }
-
-    // Reset mouse on touch end to stop infinite scrolling on mobile
-    window.addEventListener('touchend', resetMouse);
 </script>
 
 </html>

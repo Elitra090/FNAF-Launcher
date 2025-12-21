@@ -131,7 +131,6 @@
             bottom: 2vh;
             right: 2vw;
             width: 10vw;
-            margin-bottom: 75px;
             /* Increased size */
             height: 8vh;
             /* Increased size */
@@ -148,7 +147,6 @@
 
 <body>
     <canvas id="MMFCanvas" width="1024" height="768"> Your browser does not support Canvas, Please try again.</canvas>
-    <button id="emular-ctrl">CTRL</button>
     <div class="selection" id="selection">
         <img id="title" src="resources/title.png">
         <img id="animatronic" src="resources/animatronic.png">
@@ -397,6 +395,66 @@
             wedone();
         });
     };
+
+    // Mouse Recenter Script (Robust Version)
+    let resetInterval;
+    let resetTimeout;
+
+    function resetMouse() {
+        const canvas = document.getElementById('MMFCanvas');
+        if (!canvas) return;
+        const rect = canvas.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const mouseEvt = new MouseEvent('mousemove', {
+            view: window,
+            bubbles: true,
+            cancelable: true,
+            clientX: centerX,
+            clientY: centerY
+        });
+
+        const pointerEvt = new PointerEvent('pointermove', {
+            view: window,
+            bubbles: true,
+            cancelable: true,
+            clientX: centerX,
+            clientY: centerY,
+            pointerType: 'mouse'
+        });
+
+        canvas.dispatchEvent(mouseEvt);
+        canvas.dispatchEvent(pointerEvt);
+    }
+
+    function startResetting() {
+        stopResetting(); // Stop everything first
+
+        // Wait 150ms to let clicks register
+        resetTimeout = setTimeout(() => {
+            resetMouse(); // Initial reset
+            resetInterval = setInterval(resetMouse, 50); // Start loop
+        }, 150);
+    }
+
+    function stopResetting() {
+        if (resetTimeout) {
+            clearTimeout(resetTimeout);
+            resetTimeout = null;
+        }
+        if (resetInterval) {
+            clearInterval(resetInterval);
+            resetInterval = null;
+        }
+    }
+
+    // Stop resetting when touching, start resetting when released
+    window.addEventListener('touchstart', stopResetting);
+    window.addEventListener('touchend', startResetting);
+
+    // Start resetting by default
+    startResetting();
 </script>
 
 </html>
